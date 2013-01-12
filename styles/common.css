@@ -1,0 +1,33 @@
+
+body {
+	color: #000000;
+	background-color: #eeeeee;
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 1.0em;
+}
+
+h1 {
+	font-size: 3.5em;
+	margin-bottom: 1em;
+	font-family: 'Unlock', cursive;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+	color: #000000;
+}
+
+a:visited {
+	color: #222222;
+}
+
+a:hover {
+	color: #888888;
+}
+
+a:active {
+	color: #000000;
+}

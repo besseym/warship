@@ -1,0 +1,680 @@
+
+/* start common */
+
+body {
+	margin: 0; padding: 0 5em;
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+fieldset {
+	margin-bottom: 1em; padding: 0 2em 2em 2em;
+	border: 1px solid gray;
+}
+
+fieldset legend {
+	padding: 0.5em 1em;
+	font-weight: bold;
+	border: 1px soild gray;
+}
+
+fieldset label {
+	font-weight: bold;
+	display: block;
+}
+
+fieldset ul, ol {
+	margin: 0; padding:  0;
+	list-style:none;
+}
+
+fieldset li {
+	padding: 1em 0 0 0;
+}
+
+fieldset input[type='text'], fieldset input[type='password'] {
+	margin: 0; padding: 0.5em;
+	background-color: silver;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+fieldset textarea {
+	background-color: silver;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+fieldset input[type='submit']{
+	border: 1px solid #000;
+	font-size: 1em;
+	font-weight: bold;
+	width: 100%;
+	margin-top: 2em; padding: 0.25em;
+	background-color: orange;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+/* end common */
+
+/* start common */
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hidden {
+	display: none;
+}
+
+.success {
+	color: green;
+}
+
+.error {
+	color: red;
+}
+
+.panel {
+	width: 100%;
+	margin: 0 auto; padding: 1.5em;
+	border: 1px solid black;
+	background-color: rgba(255,255,255,0.65);
+}
+
+.half-panel {
+	width: 48%; padding: 0 1%;
+}
+
+.center-panel {
+	width: 75%;
+}
+
+.overlay {
+	top: 0%;
+	left: 0%;
+	width:100%;
+	height:100%;
+	text-align:center;
+	z-index: 1000;
+	background-color: black;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	position: fixed;
+}
+
+.overlay-content-container {
+	top: 25%;
+	left: 0%;
+	width:100%;
+	height:100%;
+	z-index: 1001;
+	position: fixed;
+}
+
+.overlay-content {
+	width: 40em; height: 20em;
+	margin: 0 auto; padding: 0;
+	background-color: #ffffff;
+	border: 1px solid #000;
+	text-align:center;
+}
+
+.overlay-content iframe {
+	width: 100%; height: 100%;
+	border: none;
+	margin: 0; padding: 0;
+	//frameborder
+}
+
+.overlay-content #resolution-action {
+	text-align: right;
+	position: relative;
+	top: -3em; right: 1.5em;
+}
+
+/* end common */
+
+
+/* start structure */
+
+#wrapper {
+	min-width: 1024px;
+}
+
+h2.commander {
+	width: 80%;
+	font-size: 2em; padding: 0.5em;
+	border-bottom: 1px groove gray;
+}
+
+#flash {
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+	font-size: 1.2em;
+	background-color: #fff;
+	border: 1px solid black;
+}
+
+#flash ul {
+}
+
+#auth-nav ul {
+	margin: 0;
+	list-style: none;
+	position: relative;
+	float: right;
+}
+
+#auth-nav ul li {
+	float: left;
+	border-bottom: none;
+}
+
+#auth-nav ul li a {
+	padding: 1em;
+	text-decoration: none;
+	display: block;
+	background-color: rgba(200,200,200,0.75);
+	
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+
+#auth-nav ul li:last-child a {
+	border-right: 1px solid black;
+}
+
+#auth-nav ul li a:hover {
+	color: black;
+	background-color: orange;
+}
+
+#auth-nav ul li.current-page a {
+	background-color: rgba(255,255,255,0.75);
+	position: relative; top: 0.2em;
+}
+
+#auth-nav .logout a:hover {
+	background-color: #ee0000;
+}
+
+#sign-in-panel {
+	width: 33%;
+	right: 5em;
+}
+
+#sign-in-panel p {
+	text-align: center;
+}
+
+#main-section {
+	min-height: 600px;
+}
+
+#instructions {
+	padding: 1em; background-color: white; border: 1px solid black;
+}
+
+#main-footer {
+	margin-top: 3em;
+	min-height: 200px;
+	text-align: center;
+}
+
+/* end structure */
+
+/* start profile */
+
+#record-details ul {
+	list-style: none;
+}
+
+#record-details li {
+	float: left; padding-right: 2em;
+}
+
+#record-details li label {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#record-details li input {
+	width: 2em;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#new-battle legend {
+	font-size: 1.5em;
+}
+
+#new-battle label {
+	display: inline;
+}
+
+#new-battle ul {
+	margin: 0; padding: 0;
+}
+
+#new-battle ul li {
+	margin: 0; padding: 0;
+	padding-bottom: 1em;
+}
+
+/* end profile */
+
+/* start battle */
+
+#placement-controls {
+	
+}
+
+#orientation-select-list {
+	padding: none;
+	padding-bottom: 1em;
+}
+
+#orientation-select-list li {
+	float: left;
+	padding-right: 1em;
+}
+
+#placement-controls ul {
+	list-style: none;
+	clear: both;
+}
+
+.ship-select-count {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#begin-battle {
+	text-align: right;
+}
+
+#begin-battle button {
+	padding: 1em;
+	font-weight: bold;
+}
+
+table#ship-select-table td {
+	padding-right: 1em;
+}
+
+label.select-label {
+	padding: 0.1em;
+	font-weight: bold;
+}
+
+#battleship-select-label {
+	background-color: blue;
+}
+
+#crusier-select-label {
+	background-color: orange;
+}
+
+#frigate-select-label {
+	background-color: purple;
+}
+
+#minesweeper-select-label  {
+	background-color: yellow;
+}
+
+table#fleet-state {
+	margin-left: 1em;
+	width: 25%;
+}
+
+table#fleet-state td {
+	padding-right: 2em;
+}
+
+td.ships-remaining {
+	font-weight: bold;
+	font-size:  1.2em;
+}
+
+table.board {
+	width: 100%; height: 25em;
+}
+
+table.board td {
+	border: 1px solid black;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+table.board td.tile-water {
+	background-image:url('../images/tiles/water.jpg');
+}
+
+table.board td.tile-miss {
+	background-image:url('../images/tiles/water-miss.jpg');
+}
+
+table.board td.highlight {
+	background-color: green;
+}
+
+table.board td.highlight-error {
+	background-color: red;
+}
+
+table.board td.tile-hit {
+	background-image:url('../images/tiles/water-hit.jpg');
+}
+
+
+/* start battleship tiles */
+
+/* horizontal tiles */
+table.board td.tile-0-battleship-0 {
+	background-image:url('../images/tiles/battleship/1-h-0.jpg');
+}
+
+table.board td.tile-0-battleship-1 {
+	background-image:url('../images/tiles/battleship/2-h-0.jpg');
+}
+
+table.board td.tile-0-battleship-2 {
+	background-image:url('../images/tiles/battleship/3-h-0.jpg');
+}
+
+table.board td.tile-0-battleship-3 {
+	background-image:url('../images/tiles/battleship/4-h-0.jpg');
+}
+
+table.board td.tile-0-battleship-4 {
+	background-image:url('../images/tiles/battleship/5-h-0.jpg');
+}
+
+/* hit horizontal tiles */
+table.board td.tile-0-battleship-0-hit {
+	background-image:url('../images/tiles/battleship/1-h-1.jpg');
+}
+
+table.board td.tile-0-battleship-1-hit {
+	background-image:url('../images/tiles/battleship/2-h-1.jpg');
+}
+
+table.board td.tile-0-battleship-2-hit {
+	background-image:url('../images/tiles/battleship/3-h-1.jpg');
+}
+
+table.board td.tile-0-battleship-3-hit {
+	background-image:url('../images/tiles/battleship/4-h-1.jpg');
+}
+
+table.board td.tile-0-battleship-4-hit {
+	background-image:url('../images/tiles/battleship/5-h-1.jpg');
+}
+
+/* vertical tiles */
+table.board td.tile-1-battleship-0 {
+	background-image:url('../images/tiles/battleship/1-v-0.jpg');
+}
+
+table.board td.tile-1-battleship-1 {
+	background-image:url('../images/tiles/battleship/2-v-0.jpg');
+}
+
+table.board td.tile-1-battleship-2 {
+	background-image:url('../images/tiles/battleship/3-v-0.jpg');
+}
+
+table.board td.tile-1-battleship-3 {
+	background-image:url('../images/tiles/battleship/4-v-0.jpg');
+}
+
+table.board td.tile-1-battleship-4 {
+	background-image:url('../images/tiles/battleship/5-v-0.jpg');
+}
+
+/* hit vertical tiles */
+table.board td.tile-1-battleship-0-hit {
+	background-image:url('../images/tiles/battleship/1-v-1.jpg');
+}
+
+table.board td.tile-1-battleship-1-hit {
+	background-image:url('../images/tiles/battleship/2-v-1.jpg');
+}
+
+table.board td.tile-1-battleship-2-hit {
+	background-image:url('../images/tiles/battleship/3-v-1.jpg');
+}
+
+table.board td.tile-1-battleship-3-hit {
+	background-image:url('../images/tiles/battleship/4-v-1.jpg');
+}
+
+table.board td.tile-1-battleship-4-hit {
+	background-image:url('../images/tiles/battleship/5-v-1.jpg');
+}
+
+/* end battleship tiles */
+
+
+/* start crusier tiles */
+
+/* horizontal tiles */
+table.board td.tile-0-crusier-0 {
+	background-image:url('../images/tiles/crusier/1-h-0.jpg');
+}
+
+table.board td.tile-0-crusier-1 {
+	background-image:url('../images/tiles/crusier/2-h-0.jpg');
+}
+
+table.board td.tile-0-crusier-2 {
+	background-image:url('../images/tiles/crusier/3-h-0.jpg');
+}
+
+table.board td.tile-0-crusier-3 {
+	background-image:url('../images/tiles/crusier/4-h-0.jpg');
+}
+
+/* hit horizontal tiles */
+table.board td.tile-0-crusier-0-hit {
+	background-image:url('../images/tiles/crusier/1-h-1.jpg');
+}
+
+table.board td.tile-0-crusier-1-hit {
+	background-image:url('../images/tiles/crusier/2-h-1.jpg');
+}
+
+table.board td.tile-0-crusier-2-hit {
+	background-image:url('../images/tiles/crusier/3-h-1.jpg');
+}
+
+table.board td.tile-0-crusier-3-hit {
+	background-image:url('../images/tiles/crusier/4-h-1.jpg');
+}
+
+/* vertical tiles */
+table.board td.tile-1-crusier-0 {
+	background-image:url('../images/tiles/crusier/1-v-0.jpg');
+}
+
+table.board td.tile-1-crusier-1 {
+	background-image:url('../images/tiles/crusier/2-v-0.jpg');
+}
+
+table.board td.tile-1-crusier-2 {
+	background-image:url('../images/tiles/crusier/3-v-0.jpg');
+}
+
+table.board td.tile-1-crusier-3 {
+	background-image:url('../images/tiles/crusier/4-v-0.jpg');
+}
+
+/* hit vertical tiles */
+table.board td.tile-1-crusier-0-hit {
+	background-image:url('../images/tiles/crusier/1-v-1.jpg');
+}
+
+table.board td.tile-1-crusier-1-hit {
+	background-image:url('../images/tiles/crusier/2-v-1.jpg');
+}
+
+table.board td.tile-1-crusier-2-hit {
+	background-image:url('../images/tiles/crusier/3-v-1.jpg');
+}
+
+table.board td.tile-1-crusier-3-hit {
+	background-image:url('../images/tiles/crusier/4-v-1.jpg');
+}
+
+/* start end tiles */
+
+/* start frigate tiles */
+
+/* horizontal tiles */
+table.board td.tile-0-frigate-0 {
+	background-image:url('../images/tiles/destroyer/1-h-0.jpg');
+}
+
+table.board td.tile-0-frigate-1 {
+	background-image:url('../images/tiles/destroyer/2-h-0.jpg');
+}
+
+table.board td.tile-0-frigate-2 {
+	background-image:url('../images/tiles/destroyer/3-h-0.jpg');
+}
+
+/* hit horizontal tiles */
+table.board td.tile-0-frigate-0-hit {
+	background-image:url('../images/tiles/destroyer/1-h-1.jpg');
+}
+
+table.board td.tile-0-frigate-1-hit {
+	background-image:url('../images/tiles/destroyer/2-h-1.jpg');
+}
+
+table.board td.tile-0-frigate-2-hit {
+	background-image:url('../images/tiles/destroyer/3-h-1.jpg');
+}
+
+/* vertical tiles */
+table.board td.tile-1-frigate-0 {
+	background-image:url('../images/tiles/destroyer/1-v-0.jpg');
+}
+
+table.board td.tile-1-frigate-1 {
+	background-image:url('../images/tiles/destroyer/2-v-0.jpg');
+}
+
+table.board td.tile-1-frigate-2 {
+	background-image:url('../images/tiles/destroyer/3-v-0.jpg');
+}
+
+/* hit vertical tiles */
+table.board td.tile-1-frigate-0-hit {
+	background-image:url('../images/tiles/destroyer/1-v-1.jpg');
+}
+
+table.board td.tile-1-frigate-1-hit {
+	background-image:url('../images/tiles/destroyer/2-v-1.jpg');
+}
+
+table.board td.tile-1-frigate-2-hit {
+	background-image:url('../images/tiles/destroyer/3-v-1.jpg');
+}
+
+/* end frigate tiles */
+
+/* start minesweeper tiles */
+
+/* horizontal tiles */
+table.board td.tile-0-minesweeper-0 {
+	background-image:url('../images/tiles/minesweeper/1-h-0.jpg');
+}
+
+table.board td.tile-0-minesweeper-1 {
+	background-image:url('../images/tiles/minesweeper/2-h-0.jpg');
+}
+
+/* hit horizontal tiles */
+table.board td.tile-0-minesweeper-0-hit {
+	background-image:url('../images/tiles/minesweeper/1-h-1.jpg');
+}
+
+table.board td.tile-0-minesweeper-1-hit {
+	background-image:url('../images/tiles/minesweeper/2-h-1.jpg');
+}
+
+/* vertical tiles */
+table.board td.tile-1-minesweeper-0 {
+	background-image:url('../images/tiles/minesweeper/1-v-0.jpg');
+}
+
+table.board td.tile-1-minesweeper-1 {
+	background-image:url('../images/tiles/minesweeper/2-v-0.jpg');
+}
+
+/* hit vertical tiles */
+table.board td.tile-1-minesweeper-0-hit {
+	background-image:url('../images/tiles/minesweeper/1-v-1.jpg');
+}
+
+table.board td.tile-1-minesweeper-1-hit {
+	background-image:url('../images/tiles/minesweeper/2-v-1.jpg');
+}
+
+/* end minesweeper tiles */
+
+/* end battle */
+
+/* start leaderboard */
+
+table.leaderboard {
+	width: 100%;
+	border: 1px solid black;
+}
+
+table.leaderboard thead {
+	border-bottom: 1px solid black;
+}
+
+table.leaderboard tbody tr:nth-child(odd) {
+	background-color: #bbb;
+}
+
+table.leaderboard tr {
+}
+
+table.leaderboard tr th, table.leaderboard tr td {
+	padding: 0.5em 1em;
+	border-right: 1px solid black;
+}
+
+table.leaderboard tr td.no-battles {
+	text-align: center;
+}
+
+/* end leader board */
+
